@@ -1,19 +1,8 @@
 <?php
  
-// Defining class
-  class ytapi {
- 
-    public $json;
-    public $jsonData;
+// Calling class
 
-       public function fetch($id) {
-         // FETCHING DATA FROM SERVER
-       $jsonData = file_get_contents("http://api.youtube6download.top/api/?id=$id");
-       $json = json_decode($jsonData,TRUE);
-       return($json);
-   }
-
- }
+require_once('many_class.php');
 
 // Creating object
   $object = new ytapi();
