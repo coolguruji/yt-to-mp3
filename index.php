@@ -2,7 +2,7 @@
  
 // calling class
 
-require_once('single_class.php');
+require_once('api_class.php');
 
 // Creating object
   $object = new ytapi();
